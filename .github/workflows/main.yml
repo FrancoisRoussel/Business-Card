@@ -1,6 +1,6 @@
 name: Compile Business Card
 run-name: Compiling my Business Card
-on: push
+on:
   push:
     tags:
       - v1.**
