@@ -4,9 +4,12 @@ on:
     tags:
       - v1.**
 jobs:
-  deploy:
+  build_latex:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Compiling my business card
-        run: xelatex card.tex
+      - name: Set up Git repository
+        uses: actions/checkout@v1
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: main.tex
