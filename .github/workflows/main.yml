@@ -8,6 +8,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Compile Business card
-        uses: actions/checkout@v2
-        run: xelatex card.tex
+      - name: Print the input name to STDOUT
+        run: echo The username is ${{ inputs.username }}
