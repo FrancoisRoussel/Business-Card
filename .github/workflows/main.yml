@@ -1,10 +1,13 @@
-name: "Compile Business Card"
+name: "Deploy to GAE"
 on:
   push:
     tags:
       - v1.**
 jobs:
-  steps:
-    - uses: actions/checkout@v2
-    - name: Install Dependencies
-      run: xelatex card.tex
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Compile Business card
+        run: xelatex card.tex
