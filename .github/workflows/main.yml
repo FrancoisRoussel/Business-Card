@@ -9,5 +9,5 @@ jobs:
 
     steps:
       - name: Compile Business card
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
         run: xelatex card.tex
