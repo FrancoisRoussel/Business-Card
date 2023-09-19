@@ -1,4 +1,4 @@
-name: "Deploy to GAE"
+name: "Compiling my business-card while pushing a new tag"
 on:
   push:
     tags:
