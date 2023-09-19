@@ -1,11 +1,11 @@
 name: Compile Business Card
 run-name: Compiling my Business Card
 on: push
-    push:
-        tags:
-          - v1.**
+  push:
+    tags:
+      - v1.**
 jobs:
-    steps:
-        -name: Release
-         uses: actions/checkout@v3
+  steps:
+    -name: Release
+    -uses: actions/checkout@v3
   
