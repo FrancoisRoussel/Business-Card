@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print the input name to STDOUT
+      - name: Compiling my business card
         run: xelatex card.tex
