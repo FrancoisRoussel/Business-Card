@@ -1,20 +1,10 @@
-#name: Compile Business Card
-#run-name: Compiling my Business Card
-#on: push
-#  tags:
-#    - v1.**
-#jobs:
-#  steps:
-#    -name: Release
-#    -uses: actions/checkout@v3
-  
 name: "Compile Business Card"
 on:
   push:
     tags:
       - v1.**
 jobs:
-    steps:
-      - uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: xelatex card.tex
+  steps:
+    - uses: actions/checkout@v2
+    - name: Install Dependencies
+      run: xelatex card.tex
