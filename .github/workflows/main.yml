@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
       - name: Compile Business card
+      - uses: actions/checkout@v2
         run: xelatex card.tex
